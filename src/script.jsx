@@ -17,7 +17,9 @@ const itemCountSpan = document.getElementById('item-count')
 const uncheckedCountSpan = document.getElementById('unchecked-count')
 
 window.newTodo = function () {
-  let input = prompt('Enter To-do item')
+  let input = prompt('Please Enter a To-do item.\n' +
+    'Clicking on the added item will toggle it complete/incomplete.\n' +
+    'Click on the trash bin will delete the added item.');
   todoList.addTodoItem(input)
 }
 
@@ -89,7 +91,7 @@ class TodoList extends React.Component {
     let tempData = this.state.data.slice()
     tempData[i].completed = !tempData[i].completed
     // Update completed 
-    axios.put(this.apiUrl + '/'+ tempData[i].id, { completed: tempData[i].id.completed })
+    axios.put(this.apiUrl + '/' + tempData[i].id, { completed: tempData[i].id.completed })
       .then((res) => {
         this.state.data.push(res.data);
         this.setState({ data: tempData });
@@ -131,13 +133,14 @@ class Todo extends React.Component {
     return (
       <li>
         <span className='todo-item'
-          style={{ color: this.props.completed ? '#888' : '#000' }}
+          style={{ color: this.props.completed ? '#888' : '#000', cursor: 'pointer'}}
           onClick={this.props.markComplete}>
-        {this.props.text}
+          {this.props.text}
         </span>
-        <span className='todo-delete' 
+        <span className='todo-delete'
+          style={{cursor: 'pointer'}}
           onClick={this.props.remove}>
-        <FontAwesomeIcon icon={faTrash} />
+          <FontAwesomeIcon icon={faTrash} />
         </span>
       </li>
     );
