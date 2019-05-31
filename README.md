@@ -1,3 +1,36 @@
+# Author: Wei Qi Luo
+### Submitted Thur May 30th, 2019
+
+-------------------
+
+# Install instructions
+
+
+Clone repository
+
+    $ git clone git@github.com:weiluo8791/react-todo.git
+
+Install dependencies
+
+    $ cd react-todo
+    $ npm install
+
+Build one-time (webpack everything into script.js)
+
+    $ npm run build
+
+Build continuously (webpack and continously watch for change)
+
+    $ npm run watch
+
+Two way running it 
+
+    1. $ npm run serve 
+      After serve is running point the browser to http://localhost:5000
+2. Just load [index.html](/index.html) from the browser
+
+-------------------
+
 # Assessment
 
 The goal of this project is to use ReactJS capabilities and its paradigms by creating a TODO app. This app should be able to add TODOs and track the number of total TODOs as well as the number of unchecked TODOs.
