@@ -1,5 +1,4 @@
 # Author: Wei Qi Luo
-### Submitted Thur May 30th, 2019
 
 -------------------
 
