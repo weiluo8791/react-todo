@@ -47,7 +47,7 @@ use https://www.mockapi.io/docs for API GET, POST, PUT and DELETE so any todo it
 
 https://5cef6b755660c40014948c42.mockapi.io/api/v1/todo will show you the current todo item and their status
 
-Word of caution because mockapi.io is a learning and development environment sometime the ajax reponse might be slow coming back thus it might adding delay on the display for show, add and delete todo item.     
+**Word of caution because mockapi.io is a learning and development environment sometime the ajax reponse might be slow coming back thus it might adding delay on the display for show, add and delete todo item. This especially true when you started the todo app for the first time**
 
 
 -------------------
