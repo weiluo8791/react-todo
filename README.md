@@ -32,7 +32,7 @@ Two way running it
 # Notes
 
 ## Complete todo item
-When you click on an added item it will mark the item completed and the item will display with gray color.
+When you click on an added item it will mark the item completed and the item will display with gray color. You can also toggle between complete and incomplete
 
 ## Delete todo item
 When you click the trash bin on the right of an item it will delete the item from the view as well as from presistent data. You can delete either complete or incomplete item.
