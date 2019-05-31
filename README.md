@@ -1,3 +1,57 @@
+# Author: Wei Qi Luo
+### Submitted Thur May 30th, 2019
+
+-------------------
+
+# Install instructions
+
+Clone repository
+
+    $ git clone git@github.com:weiluo8791/react-todo.git
+
+Install dependencies
+
+    $ cd react-todo
+    $ npm install
+
+Build one-time (webpack everything into script.js)
+
+    $ npm run build
+
+Build continuously (webpack and continously watch for change)
+
+    $ npm run watch
+
+Two way running it 
+
+    1. $ npm run serve 
+      After serve is running point the browser to http://localhost:5000
+2. Just load [index.html](/index.html) from the browser
+
+
+# Notes
+
+## Complete todo item
+When you click on an added item it will mark the item completed and the item will display with gray color. You can also toggle between complete and incomplete
+
+## Delete todo item
+When you click the trash bin on the right of an item it will delete the item from the view as well as from presistent data. You can delete either complete or incomplete item.
+
+## Presistent Data
+This app use the following to get presistent operation
+
+    1 Axios - Promise based HTTP client for the browser and node.js 
+    2 mockAPi - mock up APIs
+    
+use https://www.mockapi.io/docs for API GET, POST, PUT and DELETE so any todo item that you added, completed or deleted will be presistent the next time you run the application. 
+
+https://5cef6b755660c40014948c42.mockapi.io/api/v1/todo will show you the current todo item and their status
+
+Word of caution because mockapi.io is a learning and development environment sometime the ajax reponse might be slow coming back thus it might adding delay on the display for show, add and delete todo item.     
+
+
+-------------------
+
 # Assessment
 
 The goal of this project is to use ReactJS capabilities and its paradigms by creating a TODO app. This app should be able to add TODOs and track the number of total TODOs as well as the number of unchecked TODOs.
