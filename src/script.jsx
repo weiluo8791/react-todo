@@ -91,7 +91,7 @@ class TodoList extends React.Component {
     let tempData = this.state.data.slice()
     tempData[i].completed = !tempData[i].completed
     // Update completed 
-    axios.put(this.apiUrl + '/' + tempData[i].id, { completed: tempData[i].id.completed })
+    axios.put(this.apiUrl + '/' + tempData[i].id, { completed: tempData[i].completed })
       .then((res) => {
         this.state.data.push(res.data);
         this.setState({ data: tempData });
